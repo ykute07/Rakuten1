@@ -12,6 +12,5 @@ httptools
 uvloop
 flask==2.2.2
 bardapi==0.1.33
-numpy==1.25.2
 flask_restful==0.3.9
 git+https://github.com/dsdanielpark/Bard-API.git
