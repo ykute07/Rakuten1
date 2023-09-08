@@ -4,6 +4,7 @@ import uvicorn
 import joblib
 from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
+from flask_cors import CORS
 import numpy as np
 import bardapi
 import os
@@ -12,6 +13,7 @@ import os
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 appk = FastAPI(
     title="Credit Card Fraud Detection API",
